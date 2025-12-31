@@ -9,7 +9,36 @@ require_once 'db_connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mero Khata - Personal Saving Account & Loan Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --success: #27ae60;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+      
 </head>
 <body>
     <!-- Header -->
@@ -51,7 +80,179 @@ require_once 'db_connect.php';
         </div>
     </header>
 
-   
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Take Control of Your Finances with Mero Khata</h1>
+            <p>The ultimate digital ledger for tracking savings, loans, and personal expenses. Simple, secure, and accessible anywhere.</p>
+            <div class="hero-buttons">
+                <?php if(!isLoggedIn()): ?>
+                    <a href="signup.php" class="btn btn-hero btn-hero-primary">Get Started Free</a>
+                    <a href="features.php" class="btn btn-hero btn-hero-secondary">Learn More</a>
+                <?php else: ?>
+                    <a href="dashboard.php" class="btn btn-hero btn-hero-primary">Go to Dashboard</a>
+                    <a href="features.php" class="btn btn-hero btn-hero-secondary">Explore Features</a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Preview -->
+    <section class="features-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Mero Khata?</h2>
+                <p>Everything you need to manage your personal finances effectively</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your financial data is encrypted and secure. We never share your personal information with third parties.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Real-time Updates</h3>
+                    <p>Track your savings and loans in real-time. Get instant updates on your financial status anytime, anywhere.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p>Visual reports and insights help you understand your spending patterns and improve your financial health.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Payment Reminders</h3>
+                    <p>Never miss a payment deadline. Get automatic reminders for loan repayments and receivables.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access your khata from any device - desktop, tablet, or mobile phone. Your data syncs across all devices.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Multi-user Support</h3>
+                    <p>Perfect for families and small businesses. Multiple users can manage their accounts independently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-item">
+                    <h3>₹50M+</h3>
+                    <p>Transactions Tracked</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Financial Management?</h2>
+            <p>Join thousands of users who have simplified their financial tracking with Mero Khata. Start your journey to better financial health today.</p>
+            <a href="<?php echo isLoggedIn() ? 'dashboard.php' : 'signup.php'; ?>" class="btn btn-signup btn-hero">
+                <?php echo isLoggedIn() ? 'Go to Dashboard' : 'Start Free Trial'; ?>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <div class="logo-icon">MK</div>
+                        <div class="logo-text">
+                            <h1>Mero Khata</h1>
+                            <p>Personal Finance Manager</p>
+                        </div>
+                    </div>
+                    <p>Your trusted partner in personal finance management since 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="features.php">Features</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><a href="features.php#savings">Savings Tracker</a></li>
+                        <li><a href="features.php#loans">Loan Management</a></li>
+                        <li><a href="features.php#reports">Financial Reports</a></li>
+                        <li><a href="features.php#reminders">Payment Reminders</a></li>
+                        <li><a href="features.php#multi">Multi-user Accounts</a></li>
+                        <li><a href="features.php#mobile">Mobile Access</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@merokhata.com</li>
+                        <li><i class="fas fa-clock"></i> Support: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mero Khata. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> for better financial management</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
