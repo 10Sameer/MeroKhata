@@ -345,7 +345,42 @@ require_once 'config.php';
         </div>
     </section>
 
-    
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-item">
+                    <h3>₹50M+</h3>
+                    <p>Transactions Tracked</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Financial Management?</h2>
+            <p>Join thousands of users who have simplified their financial tracking with Mero Khata. Start your journey to better financial health today.</p>
+            <a href="<?php echo isLoggedIn() ? 'dashboard.php' : 'signup.php'; ?>" class="btn btn-signup btn-hero">
+                <?php echo isLoggedIn() ? 'Go to Dashboard' : 'Start Free Trial'; ?>
+            </a>
+        </div>
+    </section>
+
+  
  
 </body>
 </html>
