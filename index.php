@@ -1,5 +1,5 @@
 <?php
-require_once 'db_connect.php';
+require_once 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -117,7 +117,115 @@ require_once 'db_connect.php';
             transition: width 0.3s;
         }
         
-
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-login {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-signup {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .btn-login:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-signup:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .user-welcome {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-welcome span {
+            background: var(--success);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 150px 0 100px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn-hero {
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+     
     </style>
 </head>
 <body>
@@ -237,6 +345,7 @@ require_once 'db_connect.php';
         </div>
     </section>
 
+    
  
 </body>
 </html>
