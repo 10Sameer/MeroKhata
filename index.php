@@ -380,7 +380,68 @@ require_once 'config.php';
         </div>
     </section>
 
-  
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <div class="logo-icon">MK</div>
+                        <div class="logo-text">
+                            <h1>Mero Khata</h1>
+                            <p>Personal Finance Manager</p>
+                        </div>
+                    </div>
+                    <p>Your trusted partner in personal finance management since 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="features.php">Features</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><a href="features.php#savings">Savings Tracker</a></li>
+                        <li><a href="features.php#loans">Loan Management</a></li>
+                        <li><a href="features.php#reports">Financial Reports</a></li>
+                        <li><a href="features.php#reminders">Payment Reminders</a></li>
+                        <li><a href="features.php#multi">Multi-user Accounts</a></li>
+                        <li><a href="features.php#mobile">Mobile Access</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone"></i> +977 1-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@merokhata.com</li>
+                        <li><i class="fas fa-clock"></i> Support: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mero Khata. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> for better financial management</p>
+            </div>
+        </div>
+    </footer>
+
  
 </body>
 </html>
