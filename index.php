@@ -225,7 +225,7 @@ require_once 'config.php';
             border: 2px solid white;
         }
         
-     
+    
     </style>
 </head>
 <body>
