@@ -291,6 +291,33 @@ require_once 'config.php';
             color: #666;
             line-height: 1.6;
         }
+        /* AKDLKLASKLDAKDMKASDMKADMDKALDKLDKALDDLKADLKDLDKLADKLDKADLAKLD */
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: var(--primary);
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 42px;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+      
         
         
     </style>
@@ -508,7 +535,7 @@ require_once 'config.php';
             </div>
         </div>
     </footer>
-
- 
+    
+    
 </body>
 </html>
