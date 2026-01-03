@@ -86,6 +86,94 @@ require_once 'db_connect.php';
                 </div>
             </section>
 
+            <!-- Mission & Vision -->
+            <section class="about-section">
+                <div class="section-title">
+                    <h2>Our Mission & Vision</h2>
+                    <p>What drives us forward and what we aspire to achieve</p>
+                </div>
+                
+                <div class="mission-vision">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower every individual in Nepal with the tools and knowledge to manage their personal finances effectively, promoting financial literacy and independence through accessible technology.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To become Nepal's most trusted personal finance platform, reaching millions of users and contributing to the nation's financial well-being and economic growth.</p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Simplicity, Security, Innovation, Customer-Centricity, and Social Responsibility guide every decision we make and every feature we develop.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Our Team -->
+            <section class="about-section">
+                <div class="section-title">
+                    <h2>Meet Our Team</h2>
+                    <p>The passionate individuals behind Mero Khata's success</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <i class="fas fa-user" style="font-size: 48px;"></i>
+                        </div>
+                        <div class="team-info">
+                            <h3>Rajesh Sharma</h3>
+                            <p>Founder & CEO</p>
+                            <p class="bio">Former finance professional with 10+ years of experience in banking and fintech.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <i class="fas fa-user" style="font-size: 48px;"></i>
+                        </div>
+                        <div class="team-info">
+                            <h3>Sunita Gurung</h3>
+                            <p>Lead Developer</p>
+                            <p class="bio">Full-stack developer with expertise in PHP, JavaScript, and financial systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <i class="fas fa-user" style="font-size: 48px;"></i>
+                        </div>
+                        <div class="team-info">
+                            <h3>Bikash Thapa</h3>
+                            <p>UI/UX Designer</p>
+                            <p class="bio">Creative designer focused on creating intuitive and beautiful user experiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <i class="fas fa-user" style="font-size: 48px;"></i>
+                        </div>
+                        <div class="team-info">
+                            <h3>Anita Shrestha</h3>
+                            <p>Customer Support Head</p>
+                            <p class="bio">Dedicated to ensuring every user has an excellent experience with our platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
 </body>
 </html>
