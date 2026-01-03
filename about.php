@@ -47,3 +47,45 @@ require_once 'db_connect.php';
             </div>
         </div>
     </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Story & Mission</h1>
+            <p>Learn about Mero Khata, our journey, and our commitment to transforming personal finance management in Nepal and beyond.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <div class="about-content">
+        <div class="container">
+            <!-- Our Story -->
+            <section class="about-section">
+                <div class="section-title">
+                    <h2>Our Story</h2>
+                    <p>How Mero Khata began and evolved into Nepal's leading personal finance management platform</p>
+                </div>
+                
+                <div class="story-grid">
+                    <div class="story-text">
+                        <h3>From Simple Idea to Powerful Platform</h3>
+                        <p>Mero Khata was founded in 2024 by a team of Nepali developers and finance enthusiasts who recognized the need for a simple yet powerful digital solution to manage personal finances.</p>
+                        <p>We observed that many people in Nepal still rely on physical notebooks (khata) to track their savings, loans, and expenses. While traditional methods have their charm, they lack the efficiency, security, and analytical power of digital solutions.</p>
+                        <p>Our mission was clear: create a user-friendly, secure, and feature-rich platform that would digitize the traditional "khata" while preserving its simplicity and familiarity.</p>
+                        <p>Today, Mero Khata serves thousands of users across Nepal, helping individuals, families, and small businesses take control of their finances with confidence.</p>
+                    </div>
+                    
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <div>
+                                <i class="fas fa-book-open" style="font-size: 48px; margin-bottom: 20px;"></i>
+                                <p>Our Journey Visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+</body>
+</html>
