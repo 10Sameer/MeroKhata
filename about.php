@@ -234,5 +234,17 @@ require_once 'db_connect.php';
         </div>
     </div>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join Our Growing Community</h2>
+            <p>Be part of the financial revolution in Nepal. Start managing your finances the smart way with Mero Khata.</p>
+            <a href="<?php echo isLoggedIn() ? 'dashboard.php' : 'signup.php'; ?>" class="btn btn-signup btn-large">
+                <?php echo isLoggedIn() ? 'Go to Dashboard' : 'Join Now for Free'; ?>
+            </a>
+        </div>
+    </section>
+
+    
 </body>
 </html>
