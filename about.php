@@ -174,6 +174,65 @@ require_once 'db_connect.php';
                 </div>
             </section>
 
-          
+            <!-- Our Values -->
+            <section class="about-section">
+                <div class="section-title">
+                    <h2>Our Core Values</h2>
+                    <p>The principles that guide everything we do</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Security First</h3>
+                        <p>We prioritize the security and privacy of your financial data above all else.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Continuously improving and adding new features to serve you better.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>User-Centric</h3>
+                        <p>Everything we build is designed with our users' needs and feedback in mind.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Trust</h3>
+                        <p>Building lasting relationships based on transparency and reliability.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Promoting financial literacy through our platform and resources.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Serving and contributing to the growth of our local communities.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
 </body>
 </html>
