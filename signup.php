@@ -100,7 +100,40 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-      
+        
+        .btn-signup:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3);
+        }
+        
+        .error-message {
+            background: #fee;
+            color: #c33;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+        }
+        
+        .error-message ul {
+            margin-left: 20px;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+        }
+        
+        .login-link a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
