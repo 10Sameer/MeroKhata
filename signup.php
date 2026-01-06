@@ -28,7 +28,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             
-=
+            try {
+                $stmt = $conn->prepare("INSERT INTO users (full_name, username, email, password) VALUES (?, ?, ?, ?)");
+                $stmt->execute([$full_name, $username, $email, $hashed_password]);
+                
+                $_SESSION['user_id'] = $conn->lastInsertId();
+                $_SESSION['username'] = $username;
+                $_SESSION['full_name'] = $full_name;
+                
+                header('Location: dashboard.php');
+                exit();
+            } catch(PDOException $e) {
+                $errors[] = "Database error: " . $e->getMessage();
+            }
+        }
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
