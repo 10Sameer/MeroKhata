@@ -18,7 +18,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($password)) $errors[] = "Password is required";
     if ($password !== $confirm_password) $errors[] = "Passwords don't match";
     
-    
+    if (empty($errors)) {
+        // Check if username or email already exists
+        $stmt = $conn->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
+        $stmt->execute([$username, $email]);
+        
+        if ($stmt->rowCount() > 0) {
+            $errors[] = "Username or email already exists";
+        } else {
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            
+=
 ?>
 <!DOCTYPE html>
 <html lang="en">
