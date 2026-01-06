@@ -1,5 +1,18 @@
 <?php
-?>
+require_once 'config.php';
+
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $full_name = $_POST['full_name'] ?? '';
+    $username = $_POST['username'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
+    $confirm_password = $_POST['confirm_password'] ?? '';
+    
+    $errors = [];
+    
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
