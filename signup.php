@@ -12,7 +12,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $errors = [];
     
-  
+    if (empty($full_name)) $errors[] = "Full name is required";
+    if (empty($username)) $errors[] = "Username is required";
+    if (empty($email)) $errors[] = "Email is required";
+    if (empty($password)) $errors[] = "Password is required";
+    if ($password !== $confirm_password) $errors[] = "Passwords don't match";
+    
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
