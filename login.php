@@ -24,7 +24,24 @@
                 </div>
             <?php endif; ?>
             
-        
+            <form method="POST" action="">
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username or email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            
+            <div class="signup-link">
+                Don't have an account? <a href="signup.php">Sign up here</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
