@@ -89,7 +89,23 @@
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
         }
         
-       
+        .btn-login {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
        
     </style>
 </head>
