@@ -106,7 +106,31 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
         }
-       
+        
+        .error-message {
+            background: #fee;
+            color: #c33;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+        }
+        
+        .signup-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
