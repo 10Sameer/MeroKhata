@@ -11,7 +11,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute([$username, $username]);
             $user = $stmt->fetch();
             
-        
+            if ($user && password_verify($password, $user['password'])) {
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['full_name'] = $user['full_name'];
+                
+                header('Location: dashboard.php');
+                exit();
+            } else {
+                $error = "Invalid username or password!";
+            }
+        } catch(PDOException $e) {
+            $error = "Database error: " . $e->getMessage();
+        }
+    } else {
+        $error = "Please fill all fields!";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
