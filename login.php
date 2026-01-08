@@ -4,7 +4,14 @@ require_once 'config.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
- 
+    
+    if (!empty($username) && !empty($password)) {
+        try {
+            $stmt = $conn->prepare("SELECT id, username, password, full_name FROM users WHERE username = ? OR email = ?");
+            $stmt->execute([$username, $username]);
+            $user = $stmt->fetch();
+            
+        
 ?>
 <!DOCTYPE html>
 <html lang="en">
