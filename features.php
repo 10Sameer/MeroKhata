@@ -80,7 +80,41 @@ require_once 'config.php';
         </div>
     </section>
 
+    <!-- Feature Details -->
+    <section id="savings" class="feature-detail active">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-text">
+                    <h2>Smart Savings Tracker</h2>
+                    <p>Track your savings goals with precision and clarity. Our intuitive savings tracker helps you monitor your progress, set targets, and achieve your financial dreams.</p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Goal Setting:</strong> Set multiple savings goals with target amounts and deadlines</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Progress Tracking:</strong> Visual progress bars show how close you are to each goal</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Automatic Updates:</strong> Real-time updates whenever you add or withdraw savings</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Savings Categories:</strong> Organize savings into categories (Emergency, Vacation, etc.)</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>History Log:</strong> Complete transaction history for all your savings</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Mobile Access:</strong> Track savings on-the-go with our mobile-friendly interface</li>
+                    </ul>
+                    
+                    <a href="<?php echo isLoggedIn() ? 'dashboard.php' : 'signup.php'; ?>" class="btn btn-signup">
+                        Start Tracking Savings
+                    </a>
+                </div>
+                
+                <div class="feature-image">
+                    <div class="image-placeholder">
+                        <div>
+                            <i class="fas fa-piggy-bank" style="font-size: 48px; margin-bottom: 20px;"></i>
+                            <p>Savings Dashboard Preview</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+ 
 
 </body>
 </html>
