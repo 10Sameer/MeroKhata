@@ -46,6 +46,41 @@ require_once 'config.php';
         </div>
     </header>
 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Powerful Features for Complete Financial Control</h1>
+            <p>Discover all the tools and features that make Mero Khata the best choice for managing your personal finances and business accounts</p>
+        </div>
+    </section>
+
+    <!-- Features Categories -->
+    <section class="features-categories">
+        <div class="container">
+            <div class="category-nav">
+                <button class="category-btn active" data-target="savings">
+                    <i class="fas fa-piggy-bank"></i> Savings Tracker
+                </button>
+                <button class="category-btn" data-target="loans">
+                    <i class="fas fa-hand-holding-usd"></i> Loan Management
+                </button>
+                <button class="category-btn" data-target="reports">
+                    <i class="fas fa-chart-bar"></i> Financial Reports
+                </button>
+                <button class="category-btn" data-target="reminders">
+                    <i class="fas fa-bell"></i> Smart Reminders
+                </button>
+                <button class="category-btn" data-target="multi">
+                    <i class="fas fa-users"></i> Multi-user Access
+                </button>
+                <button class="category-btn" data-target="security">
+                    <i class="fas fa-shield-alt"></i> Security Features
+                </button>
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
 </html>
